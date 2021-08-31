@@ -28,7 +28,8 @@ namespace Lab1
             Console.WriteLine("Please enter three integers, each on their own line");
 
             // declare all variables
-            int n1, n2, n3, product, sum, quotient;
+            int n1, n2, n3, product, sum;
+            float quotient;
 
             string userInput;
             userInput = Console.ReadLine();
@@ -41,15 +42,12 @@ namespace Lab1
             product = n1 * n2 * n3;
 
             //calculate the quotient
-            quotient = sum / product;
+            quotient = sum / (float)product;
 
             // print the sum, product and quotient to the screen along with appropriate messages
-            Console.WriteLine("The sum of those three numbers is");
-            Console.WriteLine(sum);
-            Console.WriteLine("The product of those three numbers is");
-            Console.WriteLine(product);
-            Console.WriteLine("The quotient of the sum and product is");
-            Console.WriteLine(quotient);
+            Console.WriteLine("The sum of those three numbers is " + sum);
+            Console.WriteLine("The product of those three numbers is " + product);
+            Console.WriteLine("The result of dividing the sum by the product is " + quotient);
 
             //Just to pause the screen.
             Console.ReadLine();
