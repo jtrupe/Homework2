@@ -24,7 +24,7 @@ namespace Lab1
         {
             // print a message to the screen, prompting user input
             Console.WriteLine("Hello out there.");
-            Console.WriteLine("I will do somme math today.");
+            Console.WriteLine("I will do some math today.");
             Console.WriteLine("Please enter three integers, each on their own line");
 
             // declare all variables
