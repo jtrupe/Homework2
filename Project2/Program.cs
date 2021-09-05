@@ -3,15 +3,13 @@
 /// @author: Julian Trupe
 /// Date:  September 5, 2021
 ///
-/// Problem Statement: Ask user for their first and last name, convert full name to Pig Latin
+/// Problem Statement: Ask user for the temmperature in degrees Fahrenheit, convert to Celsius
 /// 
 /// Overall Plan:
 /// 1) Print an initial welcoming message to the screen
-/// 2) Prompt the user to enter their first and last name
-/// 3) Convert names to Pig Latin
-/// 4) Calculate the modulus of tix and 10, store this remainder
-/// 5) Calculate how many gumballs by dividing remainder above by 3
-/// 6) Print the resulting candybars and gumballs to the screen with a message
+/// 2) Prompt the user to enter a temperature in Fahrenheit
+/// 3) Convert temmperature to Celsius
+/// 4) Print the converted temperature
 /// 
 
 using System;
@@ -22,7 +20,20 @@ namespace Project2
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            //print welcome messages
+            Console.WriteLine("Hello!");
+            Console.WriteLine("I will convert the temperature fromm Fahrenheit to Celsius");
+
+            //declare variables
+            float degreesF, degreesC;
+
+            //get temmperature from user, convert to Fahrenheit
+            Console.WriteLine("Please enter a temperature in Fahrenheit");
+            degreesF = float.Parse(Console.ReadLine());
+            degreesC = 5*(degreesF - 32) / 9;
+
+            //print converted temperature
+            Console.WriteLine("The converted temmperature is " + Math.Round(degreesC,1) + " degrees Celsius");
         }
     }
 }
